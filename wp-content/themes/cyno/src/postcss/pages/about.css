@@ -1,0 +1,15 @@
+.about-general {
+	& .about-general__content {
+		& .text-primary {
+			color: #084e98 !important;
+		}
+	}
+}
+
+.about-customer {
+	& .about-customer__image {
+		& img {
+			border-radius: 20px;
+		}
+	}
+}

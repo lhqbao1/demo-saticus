@@ -1,0 +1,15 @@
+#login {
+	& h1 {
+		& a {
+			margin: 0;
+			background-image: unset !important;
+			background-color: transparent;
+			text-indent: 0;
+			overflow: unset;
+			width: 100%;
+			height: auto;
+			text-transform: uppercase;
+			font-weight: var(--font-bold);
+		}
+	}
+}

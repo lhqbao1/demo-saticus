@@ -1,0 +1,70 @@
+.gform_wrapper {
+	@media (--xl) {
+		& .gform_fields {
+			gap: 100px;
+		}
+	}
+
+	& .gfield {
+		& .gfield_label {
+			color: #a3a3a3;
+			font-weight: 600;
+			font-size: 13px;
+			letter-spacing: 0.12em;
+		}
+
+		& .ginput_container {
+			& input {
+				border: none;
+				box-shadow: none;
+				border-bottom: 1px solid rgb(220, 220, 220);
+				border-radius: 0;
+				padding-left: 0px !important;
+			}
+
+			& textarea {
+				border: none;
+				box-shadow: none;
+				border-bottom: 1px solid rgb(220, 220, 220);
+				border-radius: 0;
+				height: 100px !important;
+				min-block-size: 100px;
+				padding-left: 0px !important;
+			}
+		}
+	}
+
+	& .gform_required_legend {
+		display: none;
+	}
+
+	@media (--xl) {
+		& .gform_footer {
+			margin-top: 50px !important;
+		}
+	}
+}
+
+& .gform_footer {
+	& #gform_submit_button_2 {
+		background: #084e98;
+		padding: 15px 50px;
+		border-radius: 99px;
+		font-size: 16px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+}
+
+.contact-map {
+	@media (--xl) {
+		& p {
+			height: 450px;
+			margin-bottom: 0px;
+
+			& iframe {
+				position: absolute;
+			}
+		}
+	}
+}

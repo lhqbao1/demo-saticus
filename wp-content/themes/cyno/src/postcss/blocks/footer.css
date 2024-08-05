@@ -1,0 +1,38 @@
+#footer {
+	background: linear-gradient(117.42deg, #6c91b7 5.2%, #084e98 81.03%);
+
+	& .footer-content {
+		z-index: 99;
+
+		& .footer-contact__item {
+			& .col {
+				padding-bottom: 10px !important;
+
+				& p {
+					margin-bottom: 0px !important;
+				}
+			}
+		}
+
+		& .ux-menu {
+			& .ux-menu-link__text {
+				font-size: 16px;
+				color: #fff;
+				transition: padding 0.5s;
+			}
+
+			& .ux-menu-link__text:hover {
+				padding-left: 5px;
+			}
+		}
+	}
+
+	& .footer-triangle {
+		left: -500px;
+	}
+
+	& .footer-arrow {
+		left: -200px;
+		z-index: 0;
+	}
+}
