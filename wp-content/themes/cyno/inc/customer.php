@@ -17,10 +17,11 @@ get_header();
                     $args = array("post_type" => "khachhang", "posts_per_page" => 10);
                     $loop = new WP_Query($args);
                     while ($loop->have_posts()) : $loop->the_post();
-                        echo "<div class='customer-item col large-3'>"
+                        echo "<div class='customer-item col large-3'>";
+                        echo "<div class='col-inner'>"
                     ?>
                         <header class="entry-header">
-                            <h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark" class="entry-title"><?php the_title(); ?></a></h1>
+                            <h1 class="entry-title"><a rel="bookmark" class="entry-title"><?php the_title(); ?></a></h1>
                         </header>
                     <?php
                         if (has_post_thumbnail()) {
@@ -28,6 +29,7 @@ get_header();
                             echo '<img src="' . get_the_post_thumbnail_url(get_the_ID(), 'full') . '" style="height: 200px; width: full;" />';
                             echo '</div>';
                         };
+                        echo "</div>";
                         echo "</div>";
                     endwhile;
                     ?>

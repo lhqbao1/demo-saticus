@@ -109,3 +109,31 @@
 		display: none;
 	}
 }
+
+#customer-list {
+	margin-top: 50px !important;
+	& .col-inner {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		border: 1px solid #ccc;
+		padding: 20px 15px;
+		border-radius: 10px;
+
+		& .entry-title {
+			text-align: center;
+			font-size: 20px !important;
+
+			& a {
+				cursor: pointer;
+			}
+		}
+
+		& .entry-thumbnail {
+			& img {
+				width: 100% !important;
+				object-fit: fill !important;
+			}
+		}
+	}
+}

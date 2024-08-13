@@ -4,4 +4,18 @@
 			justify-content: center !important;
 		}
 	}
+
+	& .header-search-form {
+		& .ux-search-submit {
+			background: #084e98;
+			border-top-right-radius: 5px !important;
+			border-bottom-right-radius: 5px;
+		}
+
+		& .search-field {
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+			box-shadow: none;
+		}
+	}
 }
